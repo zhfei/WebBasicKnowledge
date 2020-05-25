@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>placeholder:文本输入框占位符</title>
+</head>
+<body>
+
+<script>
+    function submit() {
+        var name = document.getElementById('nameid');
+        alert(name.value);
+    }
+</script>
+
+<form>
+    <input id="nameid" type="text" maxlength="6" placeholder="请输入名字">
+    <input type="button" value="提交" onclick="submit()">
+</form>
+
+</body>
+</html>

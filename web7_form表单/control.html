@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>control:在label元素内方式一个表单元素input,可以通过label的control属性访问到表单元素input</title>
+</head>
+<body>
+
+<script>
+    function check() {
+        var label = document.getElementById('label')
+        var txt_name = label.control;
+        txt_name.value = '001100'
+
+    }
+</script>
+
+<form>
+    <label id="label">请输入邮编：
+        <input type="text" maxlength="6">
+        <small>六位数</small>
+    </label>
+    <input type="button" value="设置默认值" onclick="check()">
+</form>
+
+</body>
+</html>

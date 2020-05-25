@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>formtarget: 自定义同一个form中不同按钮的target方式</title>
+</head>
+<body>
+
+<!-- formname:指定form -->
+<form target="_blank">
+    <input type="submit" name="name1" value="value1" formaction="http://www.baidu.com" formtarget="_blank">
+    <input type="submit" name="name1" value="value1" formaction="http://www.baidu.com" formtarget="_self">
+    <input type="submit" name="name1" value="value1" formaction="http://www.baidu.com" formtarget="_parent">
+    <input type="submit" name="name1" value="value1" formaction="http://www.baidu.com" formtarget="_top">
+    <input type="submit" name="name1" value="value1" formaction="http://www.baidu.com" formtarget="formname">
+</form>
+</body>
+</html>

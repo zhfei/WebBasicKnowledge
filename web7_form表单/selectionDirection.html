@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>selectionDirection: 对表单输入框的内容进行从左到右选中，或者从右到左选择，的方向(firfox浏览器中才支持)</title>
+</head>
+<body>
+
+<script>
+    function SD() {
+        var text = document.forms[0]['textname'];
+        var direction = text.selectionDirection;
+        alert(direction);
+
+    }
+</script>
+
+<form>
+    <input type="text" name="textname">
+    <input type="button" value="点击" onclick="SD()">
+</form>
+
+
+
+</body>
+</html>

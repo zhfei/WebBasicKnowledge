@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>formctype:指定不同的编码</title>
+</head>
+<body>
+
+<!-- text/plain: 对form数据中的空格用加号替换，其他不变 -->
+<!-- multipart/form-data: 对form数据上传用此格式，其他不变 -->
+<!-- application/x-www-form-urlencoded: 对form数据进行编码 -->
+
+<form>
+    <input type="submit" name="name1" value="value1" formaction="http://www.baidu.com" formenctype="text/plain">
+    <input type="submit" name="name2" value="value2" formaction="http://www.baidu.com" formenctype="multipart/form-data">
+    <input type="submit" name="name3" value="value3" formaction="http://www.baidu.com" formenctype="application/x-www-form-urlencoded">
+</form>
+
+</body>
+</html>
