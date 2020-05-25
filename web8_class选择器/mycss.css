@@ -1,0 +1,15 @@
+.pclass{
+    color: brown;
+}
+
+.pclass a{
+    color: red;
+}
+
+.divclass{
+    color: blue;
+}
+
+.divclass p{
+    color: darkgreen;
+}

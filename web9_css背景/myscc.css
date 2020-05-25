@@ -1,0 +1,20 @@
+body{
+
+    background-color: antiquewhite;
+    background-image: url("cat.jpeg");
+    background-repeat: no-repeat;
+    /*background-position: 需要指定两个属性值，如果写一个，第二个默认为center*/
+    background-position: left top;
+    /*background-attachment: fixed 背景图片会固定位置，不随滚动条上下滚动*/
+    background-attachment: fixed;
+
+    /*css3属性*/
+    background-size: 200px 200px;
+    background-clip: padding-box;
+    background-origin: border-box;
+}
+
+body p{
+    background-color: cadetblue;
+    width: 300px;
+}

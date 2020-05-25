@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器：修改元素中包含此属性的元素</title>
+
+    <style>
+        [title]{
+            color: darkgreen;
+        }
+
+        [title='test']{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<p title="">属性选择器</p>
+<div title="test">
+    这是一个div
+</div>
+
+</body>
+</html>
