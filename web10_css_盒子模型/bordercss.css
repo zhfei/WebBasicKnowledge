@@ -1,0 +1,16 @@
+p{
+
+    border-style: dotted;
+    border-width: 2px;
+    border-color: blue;
+
+    /*border-top-color 上面的每种属性设置都可以单个边进行设置*/
+    border-top-color: red;
+
+    width: 100px;
+
+    /*css3设置*/
+    border-radius: 10px;
+    /*设置box阴影：左边距，上边距，透明度， 颜色*/
+    box-shadow: 10px 50px 5px #FF0000;
+}

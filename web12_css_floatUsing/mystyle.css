@@ -1,0 +1,27 @@
+*{
+    /*margin: 外边距*/
+    margin: 0px;
+    /*padding：内边距*/
+    padding: 0px;
+}
+
+li{
+    list-style: none;
+}
+
+#container{
+    width: 1000px;
+    height: auto;
+    margin: 20px auto;
+}
+
+ul{
+    width: 300px;
+    height: auto;
+    float: left;
+}
+
+img{
+    width: 250px;
+    height: auto;
+}

@@ -1,0 +1,68 @@
+#position1{
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    /*fixed:固定,相当于把div从原来的dom树中抽离出来，放在了顶部，和相邻元素之间没有了关系， 屏幕滚动div依然是静止的*/
+    /*position: fixed;*/
+
+    /*absolute: 和fixed的位置效果一样，只是随着屏幕滚动而滚动*/
+    position: absolute;
+
+
+    /*relative:相对于屏幕的顶部和左边进行移动，其他关系都在*/
+    /*position: relative;*/
+
+    /*static: 偏移量无效了*/
+    /*position: static;*/
+
+    z-index: 3;
+
+    left: 50px;
+    top: 50px;
+}
+
+#position2{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    /*fixed:固定,相当于把div从原来的dom树中抽离出来，放在了顶部，和相邻元素之间没有了关系， 屏幕滚动div依然是静止的*/
+    /*position: fixed;*/
+
+    /*absolute: 和fixed的位置效果一样，只是随着屏幕滚动而滚动*/
+    position: absolute;
+
+
+    /*relative:相对于屏幕的顶部和左边进行移动，其他关系都在*/
+    /*position: relative;*/
+
+    /*static: 偏移量无效了*/
+    /*position: static;*/
+
+    z-index: 1;
+
+    left: 30px;
+    top: 30px;
+}
+
+#position3{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /*fixed:固定,相当于把div从原来的dom树中抽离出来，放在了顶部，和相邻元素之间没有了关系， 屏幕滚动div依然是静止的*/
+    position: fixed;
+
+    /*absolute: 和fixed的位置效果一样，只是随着屏幕滚动而滚动*/
+    /*position: absolute;*/
+
+
+    /*relative:相对于屏幕的顶部和左边进行移动，其他关系都在*/
+    /*position: relative;*/
+
+    /*static: 偏移量无效了*/
+    /*position: static;*/
+
+    z-index: 4;
+
+    left: 70px;
+    top: 70px;
+}

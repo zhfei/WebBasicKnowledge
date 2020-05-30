@@ -1,0 +1,9 @@
+ul.ul1{
+    list-style-type: circle;
+    list-style-position: outside;
+}
+
+ul.ul2{
+    list-style-image: url("cat.jpeg");
+    list-style-position: inside;
+}

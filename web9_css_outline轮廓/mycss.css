@@ -1,0 +1,6 @@
+p{
+    outline-style: dotted;
+    outline-color: red;
+    outline-width: 2px;
+    width: 100px;
+}

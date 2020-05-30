@@ -1,0 +1,18 @@
+a:link{
+    color: blue;
+    /*隐藏下划线*/
+    text-decoration: none;
+    background-color: darkgray;
+}
+
+a:hover{
+    color: red;
+}
+
+a:active{
+    color: crimson;
+}
+
+a:visited{
+    color: cadetblue;
+}
