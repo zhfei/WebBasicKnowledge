@@ -1,0 +1,29 @@
+/*通配符选择器*/
+*{
+    font-style: italic;
+}
+
+/*元素选择器*/
+p{
+    color: paleturquoise;
+}
+
+/*类选择器*/
+.p2class{
+    color: red;
+}
+
+.p3class{
+    font-size: 20px;
+}
+
+/*结合元素选择器*/
+p.p2class{
+    border: 1px dotted red;
+}
+
+/*多类选择器,会得到两个属性值同时，再添加自己的属性 值 */
+.p2class.p3class{
+    background-color: cadetblue;
+}
+

@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.div1{
+    width: 70%;
+    height: 600px;
+    background-color: burlywood;
+    /*!*对齐方式1：margin*!*/
+    /*margin: 20px auto;*/
+    /*或者*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+
+    /*!*对齐方式2：float*!*/
+    /*float: right;*/
+
+    /*!*对齐方式3：position*!*/
+    position: absolute;
+    left: 50px;
+
+}

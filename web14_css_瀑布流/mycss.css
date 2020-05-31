@@ -1,0 +1,21 @@
+.container{
+    /*列宽*/
+    column-width: 350px;
+    /*列与列间隙*/
+    column-gap: 20px;
+}
+
+.container div img{
+    width: 350px;
+    height: auto;
+
+}
+
+.container div{
+    border: 1px dotted red;
+    margin: 10px auto;
+}
+
+div p{
+    text-align: center;
+}

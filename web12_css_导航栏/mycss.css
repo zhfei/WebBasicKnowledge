@@ -1,0 +1,67 @@
+
+/*垂直导航栏*/
+
+/*ul{*/
+    /*!*去除列表的点*!*/
+    /*list-style-type: none;*/
+    /*margin: 0px;*/
+    /*padding: 0px;*/
+/*}*/
+
+/*a:link,a:visited{*/
+    /*!*链接下划线设置*!*/
+    /*text-decoration: none;*/
+    /*background-color: burlywood;*/
+    /*color: darkblue;*/
+
+    /*!*width: 100px需要和display: block一起设置才有用*!*/
+    /*display: block;*/
+    /*width: 50px;*/
+
+    /*text-align: center;*/
+/*}*/
+
+/*a:active, a:hover{*/
+    /*background-color: crimson;*/
+/*}*/
+
+
+
+
+/*水平导航栏*/
+
+ul{
+    /*去除列表的点*/
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+
+    background-color: cadetblue;
+    width: 250px;
+    text-align: center;
+}
+
+li{
+    display: inline;
+    padding: 2px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+a:link,a:visited{
+    /*链接下划线设置*/
+    text-decoration: none;
+    background-color: burlywood;
+    color: darkblue;
+
+    /*li标签水平展示时，需求去掉block属性*/
+    /*width: 100px需要和display: block一起设置才有用*/
+    /*display: block;*/
+    /*width: 50px;*/
+
+    text-align: center;
+}
+
+a:active, a:hover{
+    background-color: crimson;
+}

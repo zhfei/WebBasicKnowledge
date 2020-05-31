@@ -1,0 +1,86 @@
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+/*2D转换*/
+
+/*平移*/
+#div2{
+    transform: translate(200px, 100px);
+    /*safari chrom*/
+    -webkit-transform: translate(200px, 100px);
+    /*IE*/
+    -ms-tranform: translate(200px, 100px);
+    /*opera*/
+    -o-transform: translate(200px, 100px);
+    /*Firefox*/
+    -moz-transform: translate(200px, 100px);
+}
+
+/*旋转*/
+#div2{
+    transform: rotate(200deg);
+    /*safari chrom*/
+    -webkit-transform: rotate(200deg);
+    /*IE*/
+    -ms-tranform: rotate(200deg);
+    /*opera*/
+    -o-transform: rotate(200deg);
+    /*Firefox*/
+    -moz-transform: rotate(200deg);
+}
+
+/*缩放*/
+#div2{
+    transform: scale(1,2);
+    /*safari chrom*/
+    -webkit-transform: scale(1,2);
+    /*IE*/
+    -ms-tranform: scale(1,2);
+    /*opera*/
+    -o-transform: scale(1,2);
+    /*Firefox*/
+    -moz-transform: scale(1,2);
+}
+
+/*倾斜*/
+#div2{
+    transform: skew(50deg, 50deg);
+    /*safari chrom*/
+    -webkit-transform: skew(50deg, 50deg);
+    /*IE*/
+    -ms-tranform: skew(50deg, 50deg);
+    /*opera*/
+    -o-transform: skew(50deg, 50deg);
+    /*Firefox*/
+    -moz-transform: skew(50deg, 50deg);
+}
+
+
+/*3D转换*/
+
+/*倾斜*/
+#div2{
+    transform: rotateX(120deg);
+    /*safari chrom*/
+    -webkit-transform: rotateX(120deg);
+    /*IE*/
+    -ms-tranform: rotateX(120deg);
+    /*opera*/
+    -o-transform: rotateX(120deg);
+    /*Firefox*/
+    -moz-transform: rotateX(120deg);
+}
+
+
+
+
+
+
+
+

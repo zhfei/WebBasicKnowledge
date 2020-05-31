@@ -1,0 +1,27 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+
+    /*统一对转场动画设置*/
+    -webkit-transition: width 2s, height 2s, transform 2s;
+    -moz-transition: width 2s, height 2s, transform 2s;
+    -ms-transition: width 2s, height 2s, transform 2s;
+    -o-transition: width 2s, height 2s, transform 2s;
+    transition: width 2s, height 2s, transform 2s;
+
+    /*单独对转场动画设置*/
+    transition-delay: 1s;
+    /*transition-duration: 2s;*/
+}
+
+/*hover鼠标移动到元素上面时的事件*/
+div:hover{
+    width: 200px;
+    height: 200px;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}

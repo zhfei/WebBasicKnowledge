@@ -1,0 +1,27 @@
+.p1{
+    /*鼠标移动到上面时的样式*/
+    cursor: cell;
+}
+.p2{
+    visibility: hidden;
+}
+
+.p3{
+    /*设置一个元素的侧边是否允许存在浮动元素*/
+    clear: right;
+}
+
+.p4{
+    /*定义元素在哪个方向浮动*/
+    float: left;
+}
+
+.p5{
+    /*定义元素是否可见*/
+    visibility: hidden;
+}
+
+li{
+    /*将列展示的列表，变成行展示*/
+    display: inline;
+}

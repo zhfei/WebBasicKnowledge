@@ -1,0 +1,70 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+
+
+    -webkit-animation: animation_name 5s;
+    -o-animation: animation_name 5s;
+    /*infinite alternate 循环执行动画*/
+    animation: animation_name 5s infinite alternate;
+}
+
+@keyframes animation_name {
+
+    0%{
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        background-color: blue;
+        left: 200px;
+        top: 0px;
+    }
+    50%{
+        background-color: brown;
+        left: 200px;
+        top: 200px;
+    }
+    75%{
+        background-color: darkorchid;
+        left: 0px;
+        top: 200px;
+    }
+    100%{
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+/*适配浏览器*/
+@-webkit-keyframes animation_name {
+    0%{
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        background-color: blue;
+        left: 200px;
+        top: 0px;
+    }
+    50%{
+        background-color: brown;
+        left: 200px;
+        top: 200px;
+    }
+    75%{
+        background-color: darkorchid;
+        left: 0px;
+        top: 200px;
+    }
+    100%{
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}

@@ -1,0 +1,40 @@
+
+#pid1{
+    color: cadetblue;
+}
+
+/*属性选择器*/
+/*带有titles属性的元素*/
+[title]{
+    color: brown;
+}
+/*titles属性的值等于'title'*/
+p[title='title']{
+    color: darkblue;
+}
+/*titles属性的值包含'title'就OK*/
+p[title~='title']{
+    color: blue;
+}
+
+/*后代选择器*/
+/*后代选择器的排列上，后面是前面元素的子元素，孙子元素都是可以的*/
+div a{
+    font-style: italic;
+}
+
+/*子元素选择器*/
+/*子元素选择器必须要逐层搜索，才能找到*/
+div>p>h2>a{
+    color: red;
+}
+
+
+/*相邻元素选择器*/
+/*相邻元素选择器必须有相同的父元素，并且是当前元素后面的兄弟元素才生效*/
+li+li{
+    color: darkmagenta;
+}
+
+
+
