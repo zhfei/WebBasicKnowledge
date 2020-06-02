@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件对象</title>
+</head>
+<body>
+    <div id="divID">
+        <button id="btn">按钮</button>
+    </div>
+    <a href="http://www.baidu.com" id="aID">改变链接的默认行为</a>
+
+    <script>
+        document.getElementById('btn').addEventListener('click',showButton)
+        document.getElementById('divID').addEventListener('click', showDiv)
+        document.getElementById('aID').addEventListener('click', showA)
+
+        function showButton(event) {
+            alert('事件的类型为：'+event.type);
+
+            //阻止事件的冒泡，阻止事件向上传递的父元素中去
+            event.stopPropagation()
+        }
+        function showDiv(event) {
+            alert('事件的对象是：'+event.target);
+        }
+        function showA(event) {
+            //取消元素的默认行为
+            event.preventDefault()
+        }
+    </script>
+</body>
+</html>

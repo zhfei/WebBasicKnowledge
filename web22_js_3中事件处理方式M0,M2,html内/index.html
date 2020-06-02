@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js三种事件处理方式</title>
+</head>
+<body>
+    <!-- 第一种方式：直接在html种处理事件 -->
+    <!--<button onclick="alert('hello,html内处理事件')">按钮</button>-->
+
+    <!-- M0级处理 -->
+    <!--<button id="btn">M0级处理按钮</button>-->
+    <!--<script>-->
+        <!--var ele = document.getElementById('btn')-->
+        <!--ele.onclick = function demo() {-->
+            <!--alert('M0级事件处理，比HTML内处理的优势是集中处理，方便管理')-->
+        <!--}-->
+        <!--ele.onclick = function demo() {-->
+            <!--alert('M0级事件处理，下面的事件会覆盖掉上面的事件处理')-->
+        <!--}-->
+    <!--</script>-->
+
+    <!-- M2级处理 -->
+    <!--<button id="btn">M2级处理按钮</button>-->
+    <!--<script>-->
+        <!--var ele = document.getElementById('btn');-->
+        <!--ele.addEventListener('click',event1);-->
+        <!--ele.addEventListener('click',event2)-->
+
+        <!--function event1() {-->
+            <!--alert('M2级事件监听')-->
+        <!--}-->
+        <!--function event2() {-->
+            <!--alert('M2级事件监听,可以多个连续追加，不会被覆盖')-->
+        <!--}-->
+        <!---->
+        <!--ele.removeEventListener('click',event1)-->
+
+    <!--</script>-->
+
+    <!-- IE8之前的事件监听方式 -->
+    <button id="btn">IE8之前兼容Button</button>
+    <script>
+        var btn =document.getElementById('btn');
+        if (btn.attachEvent){
+            btn.attachEvent('onclick',event1)
+        } else if (btn.addEventListener){
+            btn.addEventListener('click',event1)
+        } else {
+            btn.onclick = event1();
+        }
+
+        function event1() {
+            alert('hello world');
+        }
+    </script>
+
+</body>
+</html>

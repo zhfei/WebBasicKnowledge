@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>异常捕获</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="txt">
+        <input type="button" value="按钮" onclick="demo()">
+    </form>
+
+    <script>
+        function demo() {
+            var text = document.getElementById('txt').value;
+
+            try {
+                if (text == ''){
+                    throw '抛出异常错误'
+                }
+            } catch (err){
+                alert(err)
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js创建对象的方式</title>
+</head>
+<body>
+
+    <script>
+        //方法一 new一个对象：
+        person = new Object();
+        person.name = 'jack'
+        person.age = 30
+        document.write('name: '+person.name+" age: "+person.age);
+
+        //方法二， 结构体创建：
+        person2 = {'name':'jack', 'age':30};
+        document.write('name2: '+person.name+" age2: "+person.age);
+
+        //方法三, new一个方法：
+        function persn3(name,age) {
+            this.name=name;
+            this.age=age;
+        }
+
+        var son = new persn3('jack3',20);
+        document.write('son.name: '+son.name+" son.age : "+son.age);
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js进行事件句柄监听</title>
+</head>
+<body>
+    <p id="pid">Hello World</p>
+    <button id="btn">按钮</button>
+
+    <script>
+        //事件监听句柄可以连续添加，而不会被覆盖
+        document.getElementById("btn").addEventListener('click',listerner1);
+        document.getElementById('btn').addEventListener('click',listerner2);
+
+        function listerner1() {
+            alert('事件监听句柄收到了事件信号,1');
+        }
+        function listerner2() {
+            alert('事件监听句柄收到了事件信号,2');
+        }
+
+        document.getElementById('btn').removeEventListener('click',listerner2)
+
+    </script>
+</body>
+</html>

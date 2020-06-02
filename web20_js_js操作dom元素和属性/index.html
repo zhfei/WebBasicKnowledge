@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM树操作</title>
+</head>
+<body>
+    <p>这是一个段落，用于测试页面加载完成后write操作会覆盖整个dom文件</p>
+    <p>这是一个段落，用于测试页面加载完成后write操作会覆盖整个dom文件</p>
+    <p>这是一个段落，用于测试页面加载完成后write操作会覆盖整个dom文件</p>
+    <p>这是一个段落，用于测试页面加载完成后write操作会覆盖整个dom文件</p>
+    <p>这是一个段落，用于测试页面加载完成后write操作会覆盖整个dom文件</p>
+    <p>这是一个段落，用于测试页面加载完成后write操作会覆盖整个dom文件</p>
+
+    <button onclick="wrapper()">覆盖原来的dom文件</button>
+    <script>
+        function wrapper() {
+            //dom文件加载完成后，执行下面的命令会覆盖掉原来的dom文件内容
+            document.write("Hello, 原来的dom文件被覆盖了")
+        }
+    </script>
+
+    <h5>通过dom id修改h5标题</h5>
+    <button onclick="changeh5()">修改h5标题的按钮</button>
+    <script>
+        function changeh5() {
+            var hh = document.getElementsByTagName('h5')[0]
+            hh.innerHTML = 'h5标题被修改了'
+        }
+    </script>
+
+    <a href="http://www.baidu.com">通过dom 修改a的调整方向</a>
+    <button onclick="changeA()">修改a的调整方向按钮</button>
+    <script>
+        function changeA() {
+            var eleV = document.getElementsByTagName('a')[0]
+            eleV.href = 'http://www.google.com'
+        }
+    </script>
+</body>
+</html>

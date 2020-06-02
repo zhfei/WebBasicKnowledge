@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js语法</title>
+</head>
+<body>
+    <script>
+        //m n为全局变量
+        var m = 10;
+        n = 20;
+
+        function demo() {
+            var x = 30;
+            // y在函数被调用后，会变成全局变量；否则外部无法访问的。
+            y = 40;
+        }
+
+        demo()
+        alert(y)
+    </script>
+</body>
+</html>

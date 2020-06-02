@@ -1,0 +1,1 @@
+document.write('这是从JS文件中引入的 字符串：HelloWorld ')

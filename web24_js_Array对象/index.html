@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组对象</title>
+</head>
+<body>
+    <script>
+
+        var a = ['hello', 'world'];
+        var b = ['jack', 'tony'];
+        var c = a.concat(b);
+        document.write('数组合并：'+c);
+
+        document.write('数组排序：'+c.sort());
+
+        var d = ['1','3','5','2']
+        // 指定排序的方式:倒序排列
+        document.write('数组排序——倒序：'+d.sort(function (a,b) {
+            return b-a;
+        }));
+
+        d.push('666')
+        document.write('数组追加：'+d)
+        document.write('数组翻转：'+d.reverse())
+
+    </script>
+</body>
+</html>

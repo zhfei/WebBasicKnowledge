@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js事件监听</title>
+    <style>
+        .div1{
+            width: 100px;
+            height: 100px;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body onload="webOnload()">
+    <div class="div1" onmouseout="func_onmouseout(this)" onmouseover="func_onmouseover(this)"></div>
+    <script>
+        function func_onmouseout(obj) {
+            obj.innerHTML='鼠标移出了'
+        }
+        function func_onmouseover(obj) {
+            obj.innerHTML='鼠标移进来了'
+        }
+    </script>
+
+
+    <form>
+        <input type="text" onchange="txtChange(this)">
+        <input type="text" onselect="txtSelect(this)" onfocus="txtFocus(this)">
+    </form>
+    <script>
+        function txtChange(obj) {
+            alert('监听到内容改变了：'+obj.value)
+        }
+
+        function txtSelect(obj) {
+            //被选中
+            obj.style.backgroundColor = 'blue';
+        }
+
+        function txtFocus(obj) {
+            //鼠标获得焦点
+            obj.style.backgroundColor = 'red';
+        }
+    </script>
+
+    <script>
+        function webOnload() {
+            alert('网页加载完成通知')
+        }
+    </script>
+
+</body>
+</html>
