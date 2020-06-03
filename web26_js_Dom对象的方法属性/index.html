@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dom对象的方法属性</title>
+</head>
+<body>
+    <p id="pid1">hello</p>
+    <p id="pid2">hello</p>
+    <p id="pid3">hello</p>
+    <p id="pid4">hello</p>
+
+    <div id="div">
+        <a title="a_title" name="a_name">链接</a>
+    </div>
+
+
+
+    <ul>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+    </ul>
+
+    <script>
+        function showName() {
+            var name_eles = document.getElementsByName('a_name')
+            alert(name_eles.length)
+        }
+        
+        function showTagName() {
+            var tag_eles = document.getElementsByTagName('p')
+            alert(tag_eles.length)
+        }
+
+        function showAtt() {
+            var ele = document.getElementsByName('a_name')[0]
+            var att = ele.getAttribute('title')
+            alert(att)
+
+            ele.setAttribute('title','动态更新属性值')
+            var att2 = ele.getAttribute('title')
+            alert(att2)
+        }
+
+        function showChindNodes() {
+            var eles = document.getElementsByTagName('ul');
+            var notes = eles[0].childNodes
+            alert(notes.length);
+        }
+
+        function showParentNode() {
+            var ele = document.getElementsByName('a_name')[0];
+            var ele_p = ele.parentNode;
+            alert(ele_p)
+        }
+
+        function createEle() {
+            var div = document.getElementById('div')
+            var btn = document.createElement('input')
+            btn.type='button';
+            btn.value='按钮'
+
+            div.appendChild(btn)
+        }
+
+        function insertNode() {
+            var div = document.getElementById('div')
+            var old = document.getElementsByName('a_name')[0]
+            var btn = document.createElement('input')
+            btn.type='button';
+            btn.value='按钮'
+
+            div.insertBefore(btn,old)
+        }
+
+        function removeNode() {
+            var div = document.getElementById('div');
+            // 父节点后面的空白也占据一个节点位置，所以a元素是第2个位置
+            div.removeChild(div.childNodes[1]);
+        }
+
+        function getScreenSize() {
+            var h = document.documentElement.offsetHeight || document.body.offsetHeight
+            var w = document.documentElement.offsetWidth
+
+            alert('高：'+h+' 宽：'+w)
+        }
+        getScreenSize()
+
+
+
+    </script>
+</body>
+</html>

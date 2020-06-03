@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+</head>
+<body>
+    <a href="info.html">跳转</a>
+    <button id="login" onclick="goInfo()">登录</button>
+
+    <script>
+        function goInfo() {
+            // 只有从a链接跳转后产出了跳转历史才可以正常使用。
+            history.forward()
+//            history.go(-1)
+        }
+    </script>
+</body>
+</html>

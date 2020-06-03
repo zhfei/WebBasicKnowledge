@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.div_box{
+    float: left;
+    border: 1px dotted red;
+    box-shadow: 5px 5px 5px blue;
+}
+
+.div_image{
+    margin: 20px;
+}
+
+.div_image img{
+    width: 200px;
+    height: auto;
+}

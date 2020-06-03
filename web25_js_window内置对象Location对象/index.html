@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Location内置对象</title>
+</head>
+<body>
+    <p id="pid"></p>
+
+    <script>
+        document.getElementById('pid').innerHTML = window.location.hostname
+        document.getElementById('pid').innerHTML = window.location.pathname
+        document.getElementById('pid').innerHTML = window.location.port
+        document.getElementById('pid').innerHTML = window.location.protocol
+        document.getElementById('pid').innerHTML = window.location.href
+
+        location.assign('http://www.baidu.com')
+
+    </script>
+</body>
+</html>

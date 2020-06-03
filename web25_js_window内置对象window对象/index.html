@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>window对象</title>
+</head>
+<body>
+
+<p id="pid"></p>
+<button onclick="getWin()">按钮</button>
+
+    <script>
+
+        function getWin() {
+            document.getElementById('pid').innerHTML = '可用高度：'+screen.availHeight+'可用宽度：'+screen.availWidth+' 高度：'+screen.height+' 宽度：'+screen.width
+
+        }
+
+    </script>
+
+</body>
+</html>

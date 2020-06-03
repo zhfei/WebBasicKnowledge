@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2种定时器</title>
+</head>
+<body onload="getWin()">
+
+下午：<p id="pid"></p>
+<button onclick="stopTimer()">按钮</button>
+<button onclick="stopAlert()">停止弹窗</button>
+    <script>
+
+        //setInterval定时器是每隔1秒调用一次
+        var myTimer = setInterval(function () {
+            getTime();
+        },1000);
+        function getTime() {
+            var d = new Date()
+            var t = d.toLocaleTimeString()
+            document.getElementById('pid').innerHTML = t;
+        }
+        function stopTimer() {
+            clearInterval(myTimer)
+        }
+        
+        
+        var myTimer2
+        function getWin() {
+            alert('Hello World')
+            //setTimeout定时器是延时3秒调用一次，这里是使用自己调用自己的方式，通过不断创建定时器，间接实现的定时器
+            myTimer2 = setTimeout(function () {
+                getWin()
+            },3000);
+        }
+        function stopAlert() {
+            clearTimeout(myTimer2)
+        }
+
+
+    </script>
+</body>
+</html>
