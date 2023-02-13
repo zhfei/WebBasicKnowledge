@@ -64,6 +64,20 @@
         }
 
 
+        /* 文本设置可以定义文本的外观，如文本的颜色，对齐文本，装饰文本，文本缩进，行间距 */
+        .article {
+            /* 颜色设置有3种，red,green等名词。 十六进制#FF6600。 RGB代码rgb(155,2,2)/rgb(100%,1%,1%) */
+            color: red;
+            /* 文本的水平偏移，默认p标签占据一行，这里的偏移指的是内容的偏移 */
+            text-align: center;
+            /* 文字装饰器，在文字的上面，下面，中级划线, 无下划线(a标签)，对应overline, underline, line-through, none */
+            text-decoration: line-through;
+            /* 首行缩进， 通常使用2em 代替 20px, em表示一个文字大小的距离 */
+            text-indent: 20px;
+            /* 行间距由一行的上间距+文本高度+下间距组成 */
+            line-height: 26px;
+        }
+
     </style>
 
 </head>
@@ -81,5 +95,9 @@
     <div class="red font20">红色</div>
     <div id="pink">迈克尔*杰克逊</div>
     <em>我是斜体</em>
+
+    <p class="article">
+        Hook 是 React 16.8 的新增特性。它可以让你在不编写 class 的情况下使用 state 以及其他的 React 特性。
+    </p>
 </body>
 </html>
