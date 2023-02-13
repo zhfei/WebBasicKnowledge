@@ -9,10 +9,15 @@
 
     <!-- 第二种，内部设置 -->
     <style type="text/css">
+        /* 选择器分两种：基础选择器，复合选择器 */
+
+        /* 
+            1.基础选择器
+         */
+        /* 标签选择器 */
         p {
             color: blueviolet;
         }
-
         /* 样式点定义，结构类定义，一个或多个，开发最常用 */
         .red {
             width: 100px;
@@ -27,15 +32,38 @@
         .font20 {
             font-size: 20px;
         }
-
         /* id选择器的口诀：样式#定义，结构id调用，只能调用一次，别人切勿使用 */
         #pink {
             color: pink;
         }
-
+        /* 通配符选择器 */
         * {
             font-weight: 800;
         }
+
+        /* 设置字体：字体系列，大小，粗细，文字样式（如斜体） */
+        h2 {
+            /* 字体带空格则使用引号包起来，字体可以设置多个，按照使用优先级从左到右排列，如果都匹配不到则使用浏览器默认字体。 */
+            font-family: 'Macrosoft YaHei', 'Times New Roman', Times, serif;
+            font-size: 20px;
+            /* 文字加粗：font-weight:normal 和 bold 分别对应 400和700 */
+            /* font-weight: normal; */
+            font-weight: 400;
+            /* font-style: italic 字体设置斜体的不多，更多的是把斜体设置成标准字体，如（em, i） */
+            font-style: normal;
+            /* font复合属性，简写节省代码，顺序不能随意改变，其中字号，字体必须同时出现 */
+            /* font: font-style font-weight font-size/line-height font-family; */
+        }
+        em {
+            /* font-style: italic 字体设置斜体的不多，更多的是把斜体设置成标准字体 */
+            font-style: normal;
+        }
+        body {
+            /* px是像素单位，通过给body设置大小来设置整个页面的文字大小，除了h标签比较特殊需要特殊设置，其他都会被设置 */
+            font-size: 16px;
+        }
+
+
     </style>
 
 </head>
@@ -52,5 +80,6 @@
     <div class="red">红色</div>
     <div class="red font20">红色</div>
     <div id="pink">迈克尔*杰克逊</div>
+    <em>我是斜体</em>
 </body>
 </html>
