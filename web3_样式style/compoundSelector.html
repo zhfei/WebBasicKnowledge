@@ -12,9 +12,11 @@
     ol li {
       color: red;
     }
+
     ul li a {
       color: blue;
     }
+
     ul li .a0 {
       color: cadetblue;
     }
@@ -36,6 +38,29 @@
       color: darkslategrey;
     }
 
+    /* 伪类选择器 */
+    /* a:hover:鼠标悬停时 */
+    div p a:hover {
+      color: red;
+      text-decoration: none;
+    }
+    /* a:hover:鼠标按下时 */
+    div p a:active {
+      color: blue;
+      text-decoration: none;
+    }
+
+    /* a伪类选择器工作中常见用法 */
+    a {
+      color: gray;
+    }
+    a:hover {
+      color: red;
+    }
+
+    input:focus {
+      background-color: rebeccapurple;
+    }
   </style>
 </head>
 
@@ -72,6 +97,10 @@
     <li>佩奇</li>
     <li>乔治</li>
   </ul>
+
+  <input type="text">
+  <input type="text">
+  <input type="text">
 
 </body>
 
