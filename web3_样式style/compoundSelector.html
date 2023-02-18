@@ -8,6 +8,7 @@
   <title>复合选择器</title>
 
   <style>
+    /* 后代选择器：元素中间用空格分开，元素是基本选择器元素 */
     ol li {
       color: red;
     }
@@ -16,6 +17,23 @@
     }
     ul li .a0 {
       color: cadetblue;
+    }
+
+    /* 子选择器：只能选择到一级子元素，对于孙子，重孙子不选择 */
+    div>a {
+      color: darkkhaki;
+    }
+
+    .nav li {
+      color: pink;
+    }
+
+    /* 集合选择器：它是一个集合，可以同时为多种元素设置样式，元素可以是基本元素或复合元素 */
+    p,
+    div,
+    span,
+    .pig>li {
+      color: darkslategrey;
     }
 
   </style>
@@ -39,6 +57,21 @@
     <li>孩子标签</li>
   </ol>
 
+  <div>
+    <a href="">子元素链接</a>
+    <p>
+      段落内容
+      <a href="">孙子元素链接</a>
+    </p>
+  </div>
+
+  <div>熊大</div>
+  <p>熊二</p>
+  <span>光头强</span>
+  <ul class="pig">
+    <li>佩奇</li>
+    <li>乔治</li>
+  </ul>
 
 </body>
 
