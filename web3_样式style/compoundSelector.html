@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>复合选择器</title>
+
+  <style>
+    ol li {
+      color: red;
+    }
+    ul li a {
+      color: blue;
+    }
+    ul li .a0 {
+      color: cadetblue;
+    }
+
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li>孩子标签</li>
+    <li>孩子标签</li>
+    <li>
+      孩子标签
+      <a href="">孙子标签</a>
+    </li>
+    <li>
+      孩子标签
+      <a href="" class="a0">孙子标签</a>
+    </li>
+  </ul>
+
+  <ol>
+    <li>孩子标签</li>
+  </ol>
+
+
+</body>
+
+</html>
