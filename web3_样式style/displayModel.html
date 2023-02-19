@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>显示模式与显示模式转换</title>
+
+  <style>
+    /* 行内转块级 */
+    span {
+      width: 200px;
+      height: 60px;
+      display: block;
+      background-color: antiquewhite;
+    }
+
+    /* 块级转行内 */
+    div {
+      background-color: lightblue;
+      display: inline;
+    }
+
+    /* 行内转行内块级元素 */
+    strong {
+      background-color: aquamarine;
+      display: inline-block;
+      width: 200px;
+      height: 60px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <span>我是行内内容1</span><span>我是行内内容2</span>
+
+  <div>我是块级标签内容1</div>
+  <div>我是块级标签内容2</div>
+
+  <strong>我是行内内容3</strong><strong>我是行内内容4</strong>
+
+</body>
+
+</html>
