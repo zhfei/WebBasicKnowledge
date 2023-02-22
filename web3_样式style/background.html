@@ -11,7 +11,15 @@
     .img {
       width: 500px;
       height: 500px;
+      background-color: #e3e;
+      /* 背景颜色和背景图片可以同时设置 */
       background-image: url(https://chuquan-public-r-001.oss-cn-shanghai.aliyuncs.com/daily-images/gpu-rasterization-basic-concept.png?x-oss-process=image/resize,w_300);
+      /* 背景图片是否平铺 */
+      background-repeat: no-repeat;
+      /* background-repeat: repeat-x; */
+      /* 背景图片的位置设置是非常灵活简单的，它的设置方式有2种，一种是使用方位名词设置，另一种使用数字坐标设置 */
+      /* 方位名词：方位名词分水平，垂直两类: left right center top bottom ,设置设置方位名词时，它们两个的前后顺序无要求，只要一个设置成水平的，另一个自动推断成垂直的。如果只设置了一个，系统推断出水平或垂直后，另一个默认用center*/
+      background-position: top center;
     }
   </style>
 
