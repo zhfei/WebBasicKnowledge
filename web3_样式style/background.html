@@ -49,6 +49,17 @@
       /* 将背景图片固定，形成滚动视觉差, 默认是croll，可以滚动的 */
       /* background-attachment: scroll; */
       background-attachment: fixed;
+
+      /* 背景复合写法：为了简化背景属性的代码，可以将这些属性合并简写在同一属性background中。主要此时background的属性值是固定的。 */
+      /* background:背景颜色 背景图片地址 背景平铺 背景图像滚动 背景图片位置 */
+      background: transparent url(images/img_0.jpg) repeat-x fixed top;
+    }
+
+    p {
+      width: 100%;
+      height: 60px;
+      /* 通过设置 background: rgba 可以将盒子的背景色改成半透明*/
+      background: rgba(0, 0, 0, 0.4);
     }
   </style>
 
