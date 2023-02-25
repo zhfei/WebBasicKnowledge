@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>canvas画布</title>
+</head>
+<body>
+  <!-- canvas画布的宽高设置需要使用width="500px" height="400px"属性，如果使用css会导致绘制内容变形 -->
+  <canvas id="canvasId" width="500px" height="400px" style="background-color: antiquewhite;">
+    低版本提示语，支持canvas标签的浏览器看不到
+  </canvas>
+
+  <script>
+    var canvas = document.getElementById('canvasId')
+    
+    var ctx = canvas.getContext('2d')
+
+    ctx.fillStyle='red'
+    ctx.fillRect(10,20,100,100)
+
+    console.log(ctx);
+
+    console.log(canvas);
+  </script>
+</body>
+</html>
