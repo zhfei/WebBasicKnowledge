@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas面向对象动画</title>
+</head>
+<body>
+  <canvas id="myCanvasId" width="500" height="500" style="background-color: antiquewhite;">
+    请升级浏览器
+  </canvas>
+
+  <script>
+    var canvas = document.getElementById('myCanvasId')
+    var ctx = canvas.getContext('2d')
+
+    // 定义一个类
+    function Rect(x, y, w, h, color) {
+      this.x = x
+      this.y = y
+      this.w = w
+      this.h = h
+      this.color = color
+    }
+    // 添加类方法
+    Rect.prototype.update = function () {
+      this.x++;
+    }
+    Rect.prototype.render = function() {
+      ctx.fillStyle=this.color
+      ctx.fillRect(this.x, this.y, this.w, this.h)
+    }
+    // 实例化
+    var r1 = new Rect(10, 100, 100, 100, 'blue')
+    var r2 = new Rect(10, 300, 100, 200, 'red')
+
+    setInterval(() => {
+      ctx.clearRect(0, 0, 500, 500)
+      // 第一个对象
+      r1.update()
+      r1.render()
+      // 第二个对象
+      r2.update()
+      r2.render()
+    }, 10);
+
+  </script>
+</body>
+</html>
