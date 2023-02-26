@@ -41,7 +41,17 @@
     ctx.fillStyle = 'pink'
     ctx.fill();
   
-      
+    // 画弧度
+    // 1.开启路径
+    ctx.beginPath()
+    // 2.画圆弧
+    // 400, 400为起点，  50为半径，  0, 1为开始结束弧度（圆有2Pi个弧度约等于7个弧度）， false为顺时针画；
+    ctx.arc(400, 400, 50, 0, 1, false);
+    // 3.绘制路径
+    // ctx.closePath()
+    // stroke()画实际路径，fill()会自动加colsePath()画出的是闭合路径。
+    ctx.strokeStyle='green'
+    ctx.stroke()
       
     
   </script>
